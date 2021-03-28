@@ -61,6 +61,15 @@ A working demo can be found [here](https://demo.zootable.com)
   - `python scripts/ingest_xlsx_data.py <DATA.xlsx>`
   - Or can upload it from within the app once running
 
+#### Watchman
+
+Use the [watchman](https://facebook.github.io/watchman/) service and [pywatchman](https://github.com/facebook/watchman) to reduce CPU load.
+
+1. install watchman (on Ubuntu: `sudo apt install watchman`)
+2. `pywatchman` dependency is in the [requirements-test.txt](./requirements-test.txt) file.
+
+`python manage.py runserver` will use watchman now.
+
 ## Run
 
 Standard

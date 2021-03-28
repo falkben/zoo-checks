@@ -4,7 +4,7 @@
     "css-compile": "node-sass zoo_checks/static/scss -o zoo_checks/static/css",
     "css-watch": "node-sass zoo_checks/static/scss -o zoo_checks/static/css --watch",
     "browser-sync": "browser-sync start --files \"zoo_checks/static/css/*.css, zoo_checks/static/js/*.js, zoo_checks/**/*.py, zoo_checks/templates/*.html, templates/*.html\" --proxy 127.0.0.1:8000 --reload-delay=1000 --reload-debounce=500",
-    "start": "concurrently --kill-others \"npm run css-watch\" \"python -Wa manage.py runserver\" \"npm run browser-sync\" "
+    "start": "concurrently --kill-others \"npm run css-watch\" \"python manage.py runserver\" \"npm run browser-sync\" "
   },
   "repository": {
     "type": "git",
